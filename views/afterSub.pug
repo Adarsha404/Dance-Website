@@ -1,0 +1,66 @@
+//- index.pug
+doctype html
+html
+  head
+    title Adarsha Dance Academy 
+    style
+        include ../static/style.css     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  body 
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    nav#navbar 
+        ul 
+            div#logo    
+                img(src="/static/img/logo.png")
+                | ADA
+            li #[a(href="/home") Home ]
+            li #[a(href="/") About ]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class info]
+            li #[a(href="/contact") Contact us]
+    section#introSection
+        div  Welcome to Adarsha Dance Academy
+        div.small  Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our missions
+        div.card 
+            h3 Dance perfection
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p This is the best dance academy of Nepal
+        
+        div.card 
+            h3 Dance the way you like
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p This is the best dance academy of Nepal
+        div.card 
+            h3 Expert teaching
+            div.card-box 
+                div.card-img 
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p This is the best dance academy of Nepal
+
+    section#sponsorsSection
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="Sponsors 1" class="spImages")
+            img(src="/static/img/logo2.png", alt="Sponsors 2" class="spImages")
+            img(src="/static/img/logo3.png", alt="Sponsors 3" class="spImages")
+            img(src="/static/img/logo4.png", alt="Sponsors 4" class="spImages")
+    footer#footer   
+        | Copyright© 2022 AdarshaDanceAcademy.com | All rights reserved
+    script
+        include ../static/script.js

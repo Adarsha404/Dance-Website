@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title Adarsha Dance Academy 
+    block style
+    block script
+  body
+    nav#navbar 
+        ul 
+            div#logo    
+                img(src="/static/img/logo.png")
+                | ADA
+            li #[a(href="/home") Home ]
+            li #[a(href="/about") About ]
+            li #[a(href="/services") Services]
+            li #[a(href="/class") Class info]
+            li #[a(href="/contact") Contact us]
+    block content
+    footer#footer   
+        | Copyright© 2022 AdarshaDanceAcademy.com | All rights reserved

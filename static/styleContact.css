@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin: 12px 0px;
+}
+
+.container{
+    margin: 42px;
+    height: 75vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#myForm{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content:center ;
+
+
+}
+.myInput{
+    width: 40%;
+    padding: 9px;
+    margin: 7px;
+    font-size: 13px;
+    border: 2px solid black;
+    border-radius: 11px;
+    outline: none;
+}
+.btn{
+    padding: 4px 16px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #a57878;
+    color: white;
+    margin: 5px;
+    cursor: pointer;
+    outline: none;
+
+}
